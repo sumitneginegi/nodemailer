@@ -8,17 +8,17 @@ const sendMail = async (req, res) => {
     host: "smtp.ethereal.email",
     port: 587,
     auth: {
-      user: "SUBSCRIBE_TO_THAPATECHNCIAL",
-      pass: "SHARE_WITH_FRIENDS",
+      user: 'garth.adams@ethereal.email',
+        pass: 'uhFfJpTt6xKj4anGgr'
     },
   });
 
   let info = await transporter.sendMail({
-    from: '"Vinod Thapa 👻" <thapa@gmail.com>', // sender address
+    from: '"sumitnegi 👻" <sumit@gmail.com>', // sender address
     to: "iam@gmail.com", // list of receivers
-    subject: "Hello Thapa", // Subject line
-    text: "Hello YT Thapa", // plain text body
-    html: "<b>Hello YT Thapa</b>", // html body
+    subject: "Hello world", // Subject line
+    text: "Hello text", // plain text body
+    html: "<b>Hello html</b>", // html body
   });
 
   console.log("Message sent: %s", info.messageId);
